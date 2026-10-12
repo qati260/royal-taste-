@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROYAL TASTE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      text-align: center;
+    }
+    header {
+      background: #000;
+      padding: 25px;
+      border-bottom: 2px solid gold;
+    }
+    h1, h2 {
+      color: gold;
+    }
+    nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+    }
+    .hero {
+      padding: 55px 15px;
+      background: #1b1b1b;
+    }
+    button {
+      background: gold;
+      color: black;
+      border: none;
+      padding: 12px 22px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .menu {
+      padding: 25px 10px;
+    }
+    .item {
+      border: 1px solid #b89b35;
+      border-radius: 10px;
+      margin: 15px auto;
+      padding: 18px;
+      max-width: 320px;
+    }
+    .price {
+      color: gold;
+      font-weight: bold;
+    }
+    footer {
+      padding: 20px;
+      background: black;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ROYAL TASTE 👑</h1>
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#menu">MENU</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Fine Dining, Royal Taste</h2>
+    <p>Discover delicious flavors in a world of luxury.</p>
+    <button onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">
+      EXPLORE OUR MENU
+    </button>
+  </section>
+
+  <section class="menu" id="menu">
+    <h2>Our Special Menu</h2>
+    <div class="item">
+      <h3>🍔 Royal Burger</h3>
+      <p>Juicy, delicious and freshly prepared.</p>
+      <p class="price">$12</p>
+    </div>
+    <div class="item">
+      <h3>🍕 Special Pizza</h3>
+      <p>Rich cheese and unforgettable flavor.</p>
+      <p class="price">$15</p>
+    </div>
+    <div class="item">
+      <h3>🥩 Grilled Steak</h3>
+      <p>A premium dining experience.</p>
+      <p class="price">$25</p>
+    </div>
+    <div class="item">
+      <h3>🍰 Chocolate Cake</h3>
+      <p>A sweet ending to your royal meal.</p>
+      <p class="price">$8</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Contact: hello@royaltaste.example</p>
+    <p>© 2026 ROYAL TASTE</p>
+  </footer>
+</body>
+</html>
